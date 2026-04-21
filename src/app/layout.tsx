@@ -1,16 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Mogra, PT_Sans, Sekuya } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const mogra = Mogra({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-mogra",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ptSans = PT_Sans({
+  weight: ["400", "700"],
   subsets: ["latin"],
+  variable: "--font-pt-sans",
+});
+
+const sekuya = Sekuya({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-sekuya",
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -26,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${mogra.variable} ${ptSans.variable} ${sekuya.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>

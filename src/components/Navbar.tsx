@@ -1,14 +1,34 @@
+"use client";
 import Link from "next/link";
 
-export default function Navbar() {
-  return (
-    <nav className="z-100 fixed top-0 left-0 w-full px-12 py-5 bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg">
+import { useState, useEffect } from "react";
 
-      <div className="flex justify-between items-center mx-16">
-        <div className="text-white font-bold text-2xl">
-          <Link href="/">Logo</Link>
+export default function Navbar() {
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 10);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <nav className={`z-100 fixed top-0 left-0 w-full px-40 py-4 transition-all duration-300 border-b
+      ${scrolled
+        ? "bg-white/10 backdrop-blur-md border-white/20 shadow-lg"
+        : "border-transparent shadow-none bg-transparent"
+      }`}
+    >
+
+      <div className="flex justify-between items-center">
+        <div className="text-white font-bold text-4xl font-sekuya">
+          <Link href="/">FORJA</Link>
         </div>
-        <ul className="flex gap-10 text-white">
+        <ul className="flex gap-10 text-white font-pt-sans font-bold">
           <li className="uppercase">
             <Link href="/services">Services</Link>
           </li>
