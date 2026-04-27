@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Forja",
+  title: "FORJA - Agence Web",
   description: "Agence web sur-mesure pour artisans et commerçants",
 };
 

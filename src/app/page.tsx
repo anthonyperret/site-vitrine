@@ -1,6 +1,7 @@
 import ServicesGrid from "@/components/ServicesGrid";
 import SectionHeader from "@/components/SectionHeader";
 import ReviewsGrid from "@/components/ReviewsGrid";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -93,8 +94,7 @@ export default function Home() {
           </div>
 
           <div className="w-[50%] px-10">
-            <div className="bg-acier rounded-sm w-full h-80">
-            </div>
+            <ContactForm />
           </div>
           
         </div>
