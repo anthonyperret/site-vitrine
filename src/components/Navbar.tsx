@@ -16,7 +16,7 @@ export default function Navbar() {
 
         <ul className="flex gap-15 text-md text-ivoire/66 font-dm-sans">
           <li className="hover:text-cuivre">
-            <Link href="/">Services</Link>
+            <Link href="/services">Services</Link>
           </li>
           <li className="hover:text-cuivre">
             <Link href="/">Réalisations</Link>

@@ -1,7 +1,6 @@
 import ServicesGrid from "@/components/ServicesGrid";
 import SectionHeader from "@/components/SectionHeader";
 import ReviewsGrid from "@/components/ReviewsGrid";
-import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -33,7 +32,7 @@ export default function Home() {
         </div>
         
       </section>
-      <section className=" bg-acier">
+      <section className="bg-acier">
         <div className="px-100 py-30">
           <SectionHeader eyebrow="Ce que je créé" title="Mes" highlight="services." />
 
@@ -47,11 +46,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen bg-acier">
-        <div className="px-100 py-30">
-          <SectionHeader eyebrow="Comment ça marche" title="Mon" highlight="processus." />
-        </div>
-      </section>
 
       <section className="bg-fonderie">
         <div className="px-100 py-30 flex">
