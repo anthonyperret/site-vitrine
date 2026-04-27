@@ -1,33 +1,102 @@
-import Link from "next/link";
+import ServicesGrid from "@/components/ServicesGrid";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function Home() {
   return (
     <div>
-      <section className="h-screen bg-cyan-500 flex justify-center items-center" style={{
-          backgroundImage: "url('/hero-banner.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}>
+      <section className="h-screen bg-fonderie flex justify-center items-center relative overflow-hidden">
 
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="flex flex-col items-center relative z-10">
-          <h1 className="text-center text-7xl font-bold uppercase mb-6 text-white font-mogra">Forgez votre réussite</h1>
-          <p className="text-center text-lg w-2xl text-white">Votre savoir-faire mérite une vitrine à sa hauteur. Chez Forja, on conçoit des sites web sur-mesure pour les artisans et commerçants qui veulent exister en ligne.</p>
-        </div>
+        <span
+          className="absolute top-38 select-none font-bebas-neue text-[40vw] leading-none"
+          style={{ color: "transparent", WebkitTextStroke: "1px var(--ivoire)", opacity: 0.07 }}
+          aria-hidden="true"
+        >
+          FORJA
+        </span>
 
-        <div className="absolute bottom-30 z-10">
-          <Link href="/services">
-            <button className="font-pt-sans font-bold border-2 border-white text-white px-6 py-2 rounded-full min-w-60 hover:cursor-pointer">
-              Découvrez nos services
-            </button>
-          </Link>
+        <div className="flex flex-col gap-5 relative z-10 width-2/3 mt-20">
+          <div>
+            <p className="animate-fade-up text-sm text-cuivre uppercase mb-4 tracking-widest [word-spacing:0.3em]" style={{ animationDelay: "0.1s" }}>Agence web — sud-ouest</p>
+            <h1 className="animate-fade-up text-9xl font-bold uppercase mb-6 text-white font-bebas-neue w-4xl" style={{ animationDelay: "0.25s" }}>Forgez votre présence <span className="text-cuivre">en ligne.</span></h1>
+          </div>
+          <div>
+            <p className="animate-fade-up w-2xl font-dm-sans text-ivoire/66" style={{ animationDelay: "0.45s" }}>Sites vitrine, e-commerce, applications — conçus sur mesure pour les artisans, commerçants et indépendants qui veulent enfin exister là où leurs clients les cherchent.</p>
+            <div className="animate-fade-up flex gap-5 mt-10" style={{ animationDelay: "0.6s" }}>
+              <button className="bg-cuivre text-ivoire px-6 py-2 rounded-sm font-dm-sans">Voir les réalisations</button>
+              <button className="border border-ivoire/66 text-ivoire/66 px-6 py-2 rounded-sm font-dm-sans">Découvrir les services</button>
+            </div>
+          </div>
+          
+          
         </div>
         
       </section>
-      <section className="h-screen bg-red-500">
+      <section className=" bg-acier">
+        <div className="px-100 py-30">
+          <SectionHeader eyebrow="Ce que je créé" title="Mes" highlight="services." />
 
+          <ServicesGrid />
+        </div>
       </section>
-      <section className="h-screen bg-green-500"></section>
+
+      <section className="h-screen bg-fonderie">
+        <div className="px-100 py-30">
+          <SectionHeader eyebrow="Portfolio" title="Dernières" highlight="réalisations." />
+        </div>
+      </section>
+
+      <section className="h-screen bg-acier">
+        <div className="px-100 py-30">
+          <SectionHeader eyebrow="Comment ça marche" title="Mon" highlight="processus." />
+        </div>
+      </section>
+
+      <section className="bg-fonderie">
+        <div className="px-100 py-30 flex">
+
+          <div className="w-[50%] px-10">
+            <div className="bg-acier rounded-sm w-full h-175">
+            </div>
+          </div>
+
+          <div className="w-[50%] px-10 flex flex-col justify-center">
+            <SectionHeader eyebrow="Qui je suis" title="Concepteur &" highlight="développeur." />
+            <p className="font-dm-sans text-ivoire/66 mt-10">Basé dans le Sud-Ouest, je travaille en direct avec mes clients — sans intermédiaire, sans grande agence. Chaque projet est traité personnellement, de la première esquisse à la mise en ligne.</p>
+            <p className="font-dm-sans text-ivoire/66 mt-5">Mon objectif : vous livrer un site qui ressemble vraiment à votre métier, qui se charge vite, qui fonctionne sur mobile, et qui génère des contacts. Pas un template copié-collé.</p>
+          </div>
+          
+        </div>
+      </section>
+
+      <section className="h-screen bg-acier">
+        <div className="px-100 py-30">
+          <SectionHeader eyebrow="Ce qu'ils disent" title="Ils m'ont fait" highlight="confiance." />
+        </div>
+      </section>
+
+      <section className="bg-fonderie">
+        <div className="px-100 py-30 flex">
+
+          <div className="w-[50%] px-10">
+            <SectionHeader eyebrow="Travaillons ensemble" title="Parlons de votre" highlight="projet." />
+            <p className="font-dm-sans text-ivoire/66 mt-10">Devis gratuit sous 48h. Pas d&apos;engagement, pas de jargon — juste une réponse claire sur ce que je peux faire pour vous.</p>
+
+            <ul className="mt-5 text-ivoire/66 font-dm-sans">
+              <li><span className="text-cuivre mr-2">•</span>contact@forja.fr</li>
+              <li><span className="text-cuivre mr-2">•</span>+33 6 XX XX XX XX</li>
+              <li><span className="text-cuivre mr-2">•</span>Intervention Sud-Ouest</li>
+            </ul>
+            
+          </div>
+
+          <div className="w-[50%] px-10">
+            <div className="bg-acier rounded-sm w-full h-80">
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
     </div>
   );
 }

@@ -3,14 +3,36 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --fonderie: #0b1014;
+  --acier: #1f252b;
+  --cuivre: #db640e;
+  --braise: #A8492B;
+  --ivoire: #ece7e1;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sekuya: var(--font-sekuya), system-ui;
-  --font-mogra: var(--font-mogra), system-ui;
-  --font-pt-sans: var(--font-pt-sans), sans-serif;
+  --color-fonderie: var(--fonderie);
+  --color-acier: var(--acier);
+  --color-cuivre: var(--cuivre);
+  --color-braise: var(--braise);
+  --color-ivoire: var(--ivoire);
+  --font-bebas-neue: var(--font-bebas-neue), system-ui;
+  --font-dm-sans: var(--font-dm-sans), sans-serif;
+  --animate-fade-up: fade-up 0.7s ease both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 html {
@@ -22,6 +44,6 @@ body {
 }
 
 p {
-  font-family: var(--font-pt-sans);
+  font-family: var(--font-dm-sans);
 }
 

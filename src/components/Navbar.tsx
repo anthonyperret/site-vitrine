@@ -1,44 +1,35 @@
 "use client";
 import Link from "next/link";
 
-import { useState, useEffect } from "react";
-
 export default function Navbar() {
 
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-  const handleScroll = () => {
-    setScrolled(window.scrollY > 10);
-  };
-
-  window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <nav className={`z-100 fixed top-0 left-0 w-full px-40 py-4 transition-all duration-300 border-b
-      ${scrolled
-        ? "bg-white/10 backdrop-blur-md border-white/20 shadow-lg"
-        : "border-transparent shadow-none bg-transparent"
-      }`}
-    >
+    <nav className="z-100 fixed top-0 left-0 w-full px-40 py-5 bg-acier border-b border-ivoire/66">
 
       <div className="flex justify-between items-center">
-        <div className="text-white font-bold text-4xl font-sekuya">
-          <Link href="/">FORJA</Link>
+
+        <div className="text-ivoire font-bold text-5xl font-bebas-neue">
+          <Link href="/">
+            FOR<span className="text-cuivre">JA</span>
+          </Link>
         </div>
-        <ul className="flex gap-10 text-white font-pt-sans font-bold">
-          <li className="uppercase">
-            <Link href="/services">Services</Link>
+
+        <ul className="flex gap-15 text-md text-ivoire/66 font-dm-sans">
+          <li className="hover:text-cuivre">
+            <Link href="/">Services</Link>
           </li>
-          <li className="uppercase">
+          <li className="hover:text-cuivre">
+            <Link href="/">Réalisations</Link>
+          </li>
+          <li className="hover:text-cuivre">
             <Link href="/">À Propos</Link>
           </li>
-          <li className="uppercase">
+          <li className="hover:text-cuivre">
             <Link href="/">Contact</Link>
           </li>
         </ul>
+
+        <button className="bg-cuivre text-ivoire px-6 py-3 rounded-sm font-dm-sans">Devis gratuit</button>
       </div>
     </nav>
   );
