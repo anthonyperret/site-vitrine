@@ -25,7 +25,7 @@ export default function Navbar() {
             <Link href="/">À Propos</Link>
           </li>
           <li className="hover:text-cuivre">
-            <Link href="/">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
 
