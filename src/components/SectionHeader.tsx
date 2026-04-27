@@ -8,7 +8,7 @@ export default function SectionHeader({ eyebrow, title, highlight }: Props) {
   return (
     <div>
       <div className="w-15 h-0.5 bg-cuivre mb-2" />
-      <p className="text-sm text-ivoire/66 uppercase mb-10 tracking-widest [word-spacing:0.3em]">
+      <p className="text-sm text-ivoire/66 tagline mb-10">
         {eyebrow}
       </p>
       <h2 className="uppercase text-ivoire text-7xl font-bebas-neue font-bold">

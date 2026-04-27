@@ -22,6 +22,7 @@
   --font-bebas-neue: var(--font-bebas-neue), system-ui;
   --font-dm-sans: var(--font-dm-sans), sans-serif;
   --animate-fade-up: fade-up 0.7s ease both;
+
 }
 
 @keyframes fade-up {
@@ -45,5 +46,9 @@ body {
 
 p {
   font-family: var(--font-dm-sans);
+}
+
+@utility tagline {
+  @apply uppercase tracking-widest;
 }
 

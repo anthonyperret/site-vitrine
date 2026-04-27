@@ -18,7 +18,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-5 relative z-10 width-2/3 mt-20">
           <div>
-            <p className="animate-fade-up text-sm text-cuivre uppercase mb-4 tracking-widest [word-spacing:0.3em]" style={{ animationDelay: "0.1s" }}>Agence web — sud-ouest</p>
+            <p className="animate-fade-up text-sm text-cuivre tagline mb-4" style={{ animationDelay: "0.1s" }}>Agence web — sud-ouest</p>
             <h1 className="animate-fade-up text-9xl font-bold uppercase mb-6 text-white font-bebas-neue w-4xl" style={{ animationDelay: "0.25s" }}>Forgez votre présence <span className="text-cuivre">en ligne.</span></h1>
           </div>
           <div>
@@ -45,7 +45,7 @@ export default function Home() {
         <div className="px-100 py-40">
           <SectionHeader eyebrow="Portfolio" title="Dernières" highlight="réalisations." />
 
-          <ProductionsGrid></ProductionsGrid>
+          <ProductionsGrid />
         </div>
       </section>
 

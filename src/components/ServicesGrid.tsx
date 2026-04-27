@@ -42,7 +42,7 @@ export default function ServicesGrid() {
           <span className="text-acier font-bebas-neue text-6xl">{card.number}</span>
           <h3 className="uppercase font-bebas-neue text-3xl">{card.title}</h3>
           <p className="font-dm-sans text-ivoire/66 text-sm">{card.description}</p>
-          <div className="mt-auto w-max border border-ivoire/33 px-2 py-1 text-cuivre uppercase font-dm-sans text-xs">{card.price}</div>
+          <div className="mt-auto w-max border border-ivoire/33 px-2 py-1 text-cuivre tagline font-dm-sans text-xs">{card.price}</div>
         </div>
       ))}
     </div>

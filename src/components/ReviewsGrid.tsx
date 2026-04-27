@@ -34,7 +34,7 @@ export default function ReviewsGrid() {
           <p className="font-dm-sans text-ivoire/66 text-sm italic">{card.text}</p>
           <div className="mt-auto">
             <p className="text-ivoire text-xs mb-1">{card.client}</p>
-            <p className="uppercase text-xs text-ivoire/33 tracking-widest [word-spacing:0.3em]">{card.job}</p>
+            <p className="text-xs text-ivoire/33 tagline">{card.job}</p>
           </div>
           
         </div>
