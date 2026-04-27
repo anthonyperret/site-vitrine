@@ -18,48 +18,64 @@ npm run lint     # Run ESLint
 
 ## Project context
 
-**Forja** — agence web sur-mesure pour artisans et commerçants, site en français, basé dans le Sud-Ouest. Single-page homepage with multiple full-screen sections.
+**Forja** — agence web sur-mesure pour artisans et commerçants, site en français, basé dans le Sud-Ouest.
 
 ## Brand colors
 
 Defined as CSS variables in `:root` and registered in `@theme inline` as Tailwind utilities:
 
-| Name       | Hex       | Usage                  |
-|------------|-----------|------------------------|
-| `fonderie` | `#0b1014` | Background sombre      |
-| `acier`    | `#1f252b` | Background secondaire  |
-| `cuivre`   | `#db640e` | Accent principal       |
-| `braise`   | `#A8492B` | Accent secondaire      |
-| `ivoire`   | `#ece7e1` | Texte clair            |
+| Name       | Hex       | Usage                 |
+|------------|-----------|-----------------------|
+| `fonderie` | `#0b1014` | Background sombre     |
+| `acier`    | `#1f252b` | Background secondaire |
+| `cuivre`   | `#db640e` | Accent principal      |
+| `braise`   | `#A8492B` | Accent secondaire     |
+| `ivoire`   | `#ece7e1` | Texte clair           |
 
 ## Architecture
 
 ```
 src/
 ├── app/
-│   ├── layout.tsx          # Root layout: fonts + <Navbar>
-│   ├── page.tsx            # Homepage (all sections)
-│   └── globals.css         # CSS vars, @theme inline, @keyframes
+│   ├── layout.tsx               # Root layout: fonts + <Navbar>
+│   ├── page.tsx                 # Homepage (hero, services, réalisations, avis)
+│   ├── globals.css              # CSS vars, @theme inline, @keyframes
+│   └── realisations/page.tsx   # Page réalisations (en cours)
 ├── components/
-│   ├── Navbar.tsx          # Fixed navbar, bg-acier (scroll effect removed)
-│   ├── Footer.tsx          # Footer with logo, copyright, links
-│   ├── SectionHeader.tsx   # Reusable eyebrow + h2 with copper accent
-│   └── ServicesGrid.tsx    # 4 service cards, scroll-triggered animation
+│   ├── Navbar.tsx               # Fixed navbar, bg-acier, liens vers les routes
+│   ├── Footer.tsx               # Logo, copyright, liens légaux
+│   ├── SectionHeader.tsx        # Eyebrow + h2 avec accent cuivre (réutilisable)
+│   ├── ServicesGrid.tsx         # 4 cartes services, animation scroll
+│   ├── ProductionsGrid.tsx      # 6 cartes réalisations (grid 3 col), animation scroll
+│   ├── ReviewsGrid.tsx          # 3 cartes avis clients, animation scroll
+│   └── ContactForm.tsx          # Formulaire devis (nom, email, type projet, message)
 └── hooks/
-    └── useScrollReveal.ts  # IntersectionObserver hook → { ref, visible }
+    └── useScrollReveal.ts       # IntersectionObserver hook → { ref, visible }
 ```
+
+## Routes
+
+| Route          | Fichier                        | État        |
+|----------------|--------------------------------|-------------|
+| `/`            | `app/page.tsx`                 | En cours    |
+| `/realisations`| `app/realisations/page.tsx`    | En cours    |
+| `/services`    | —                              | À créer     |
+| `/a-propos`    | —                              | À créer     |
+| `/contact`     | —                              | À créer     |
 
 ## Key patterns
 
-**`SectionHeader`** — used at the top of every section, accepts 3 props:
+**`SectionHeader`** — utilisé en tête de chaque section, 3 props :
 ```tsx
 <SectionHeader eyebrow="Ce que je créé" title="Mes" highlight="services." />
 ```
-Renders: copper line → small eyebrow text → `h2` with highlighted word in `text-cuivre`.
+Rendu : trait cuivre → texte eyebrow → `h2` avec le mot `highlight` en `text-cuivre`.
 
-**`useScrollReveal(threshold?)`** — returns `{ ref, visible }`. Attach `ref` to the container, then conditionally apply `animate-fade-up` and `opacity-0` based on `visible`. Fires once, then disconnects.
+**`useScrollReveal(threshold?)`** — retourne `{ ref, visible }`. Attacher `ref` au conteneur, appliquer `animate-fade-up` / `opacity-0` selon `visible`. Se déclenche une seule fois.
 
-**`animate-fade-up`** — custom Tailwind animation defined in `globals.css` via `@keyframes fade-up` + `--animate-fade-up` in `@theme inline`. Use `animation-fill-mode: both` (already set) so delayed elements start invisible.
+**`animate-fade-up`** — animation Tailwind custom définie dans `globals.css` via `@keyframes fade-up` + `--animate-fade-up` dans `@theme inline`. Le `both` en fill-mode garantit que les éléments en attente de délai démarrent invisibles.
+
+**Grids animées** — `ServicesGrid`, `ProductionsGrid` et `ReviewsGrid` suivent le même pattern : `useScrollReveal` + `opacity-0` / `animate-fade-up` + `animationDelay` progressif sur chaque carte.
 
 ## Path alias
 

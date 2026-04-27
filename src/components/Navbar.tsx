@@ -19,7 +19,7 @@ export default function Navbar() {
             <Link href="/services">Services</Link>
           </li>
           <li className="hover:text-cuivre">
-            <Link href="/">Réalisations</Link>
+            <Link href="/realisations">Réalisations</Link>
           </li>
           <li className="hover:text-cuivre">
             <Link href="/a-propos">À Propos</Link>

@@ -1,6 +1,7 @@
 import ServicesGrid from "@/components/ServicesGrid";
 import SectionHeader from "@/components/SectionHeader";
 import ReviewsGrid from "@/components/ReviewsGrid";
+import ProductionsGrid from "@/components/ProductionsGrid";
 
 export default function Home() {
   return (
@@ -40,9 +41,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen bg-fonderie">
-        <div className="px-100 py-30">
+      <section className="bg-fonderie">
+        <div className="px-100 py-40">
           <SectionHeader eyebrow="Portfolio" title="Dernières" highlight="réalisations." />
+
+          <ProductionsGrid></ProductionsGrid>
         </div>
       </section>
 
