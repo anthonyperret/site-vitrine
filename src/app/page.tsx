@@ -1,5 +1,6 @@
 import ServicesGrid from "@/components/ServicesGrid";
 import SectionHeader from "@/components/SectionHeader";
+import ReviewsGrid from "@/components/ReviewsGrid";
 
 export default function Home() {
   return (
@@ -68,9 +69,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen bg-acier">
+      <section className="bg-acier">
         <div className="px-100 py-30">
           <SectionHeader eyebrow="Ce qu'ils disent" title="Ils m'ont fait" highlight="confiance." />
+
+          <ReviewsGrid />
         </div>
       </section>
 
