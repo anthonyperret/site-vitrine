@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 
 export default function PageAPropos() {
@@ -8,8 +9,7 @@ export default function PageAPropos() {
         <div className="px-100 py-40 flex z-10">
 
           <div className="w-[50%] px-10">
-            <div className="bg-acier rounded-sm w-full h-175">
-            </div>
+            <Image src="/photo_de_profil.png" alt="Anthony Perret" width={1024} height={1536} className="w-full h-auto rounded-md" />
           </div>
 
           <div className="w-[50%] px-10 flex flex-col justify-center">
