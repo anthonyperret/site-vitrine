@@ -7,7 +7,7 @@ interface Props {
 
 export default function ServiceCard({ service }: Props) {
   return(
-    <div id={service.number} className="flex w-full border border-ivoire/33 rounded-sm hover:border-cuivre">
+    <div id={service.number} className="scroll-mt-30 flex w-full border border-ivoire/33 rounded-sm hover:border-cuivre">
 
       <div className={`${service.featured ? "bg-cuivre" : "bg-acier border-r"} w-1/3 px-10 py-10 border-ivoire/33 flex flex-col justify-between gap-20`}>
         <div className="flex flex-col gap-2">
