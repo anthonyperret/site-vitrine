@@ -16,7 +16,7 @@ export default function ServicesGrid() {
           >
             <span className="text-acier font-bebas-neue text-6xl">{service.number}</span>
             <h3 className="uppercase font-bebas-neue text-3xl">{service.title}</h3>
-            <p className="font-dm-sans text-ivoire/66 text-sm">{service.desc1}</p>
+            <p className="font-dm-sans text-ivoire/66 text-sm">{service.desc2}</p>
             <div className="mt-auto w-max border border-ivoire/33 px-2 py-1 text-cuivre tagline font-dm-sans text-xs">
               {service.price > 0 ? `à partir de ${service.price}€` : "sur devis"}
             </div>

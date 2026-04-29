@@ -17,8 +17,12 @@ export default function ServiceCard({ service }: Props) {
         </div>
 
         <div>
-          <span className="text-xs text-ivoire/33 tagline">à partir de</span>
-          <h3 className="text-ivoire font-bebas-neue text-5xl">{service.price}€</h3>
+          <span className="text-xs text-ivoire/33 tagline">
+            {service.price > 0 ? "à partir de" : "tarif"}
+          </span>
+          <h3 className="text-ivoire font-bebas-neue text-5xl">
+            {service.price > 0 ? `${service.price}€` : "sur devis"}
+          </h3>
           <Link href="/contact">
             <button className={`${service.featured ? "bg-ivoire text-cuivre" : "bg-cuivre text-ivoire"} mt-5 px-6 py-2 rounded-sm font-dm-sans w-full`}>Demander un devis</button>
           </Link>
@@ -27,9 +31,11 @@ export default function ServiceCard({ service }: Props) {
       </div>
 
       <div className="w-2/3 px-10 py-10 flex flex-col gap-5">
-        <p className="font-dm-sans text-ivoire/66 text-sm">{service.desc2}</p>
+        <p className="font-dm-sans text-ivoire/66">{service.desc2}</p>
 
-        <span className="text-xs text-ivoire/33 tagline mt-auto">Ce qui est inclus</span>
+        <span className="text-xs text-ivoire/33 tagline mt-auto">
+          {service.price > 0 ? "Ce qui est inclus" : "Exemple de fonctionnalités"}
+        </span>
 
         <div className="grid grid-cols-2 font-dm-sans text-sm text-ivoire">
 

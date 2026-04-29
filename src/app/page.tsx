@@ -46,7 +46,7 @@ export default function Home() {
 
           <div className="w-full flex justify-center mt-15">
             <Link href="/services">
-              <button className="bg-cuivre text-ivoire px-6 py-2 rounded-sm font-dm-sans">Découvrir les services</button>
+              <button className="bg-cuivre text-ivoire px-6 py-2 rounded-sm font-dm-sans">Découvrir tous les services</button>
             </Link>
           </div>
           
