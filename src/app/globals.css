@@ -48,6 +48,10 @@ p {
   font-family: var(--font-dm-sans);
 }
 
+button {
+  cursor: pointer;
+}
+
 @utility tagline {
   @apply uppercase tracking-widest;
 }

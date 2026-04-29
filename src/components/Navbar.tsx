@@ -10,7 +10,7 @@ export default function Navbar() {
 
         <div className="text-ivoire font-bold text-5xl font-bebas-neue">
           <Link href="/">
-            FOR<span className="text-cuivre">JA</span>
+            FAR<span className="text-cuivre">GA</span>
           </Link>
         </div>
 
@@ -29,7 +29,9 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <button className="bg-cuivre text-ivoire px-6 py-3 rounded-sm font-dm-sans">Devis gratuit</button>
+        <Link href="/contact">
+          <button className="bg-cuivre text-ivoire px-6 py-3 rounded-sm font-dm-sans">Devis gratuit</button>
+        </Link>
       </div>
     </nav>
   );

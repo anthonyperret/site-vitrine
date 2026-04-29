@@ -18,7 +18,7 @@ npm run lint     # Run ESLint
 
 ## Project context
 
-**Forja** — agence web sur-mesure pour artisans et commerçants, site en français, basé dans le Sud-Ouest.
+**Farga** — agence web sur-mesure pour artisans et commerçants, site en français, basé dans le Sud-Ouest.
 
 ## Brand colors
 

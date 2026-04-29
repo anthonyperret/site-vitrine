@@ -4,15 +4,15 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="w-full flex justify-around items-center text-ivoire/66 font-dm-sans bg-acier px-40 py-10 border-t border-ivoire/66">
+      <div className="w-full flex items-center text-ivoire/66 font-dm-sans bg-acier px-40 py-10 border-t border-ivoire/66">
 
-        <div className="text-ivoire font-bold text-2xl font-bebas-neue">
-          FOR<span className="text-cuivre">JA</span>
+        <div className="flex-1 text-ivoire font-bold text-2xl font-bebas-neue">
+          FAR<span className="text-cuivre">GA</span>
         </div>
 
-        <span className="text-xs">© 2026 FORJA — Tous droits réservés</span>
+        <span className="text-xs">© 2026 FARGA — Tous droits réservés</span>
 
-        <ul className="flex gap-5 text-sm">
+        <ul className="flex-1 flex justify-end gap-5 text-sm">
           <li>Mentions légales</li>
           <li>CGV</li>
           <li>Contact</li>

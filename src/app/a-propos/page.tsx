@@ -3,8 +3,9 @@ import SectionHeader from "@/components/SectionHeader";
 export default function PageAPropos() {
   return (
     <div>
-      <section className="bg-fonderie">
-        <div className="px-100 py-40 flex">
+      <section className="bg-fonderie flex justify-center items-center relative overflow-hidden">
+
+        <div className="px-100 py-40 flex z-10">
 
           <div className="w-[50%] px-10">
             <div className="bg-acier rounded-sm w-full h-175">
@@ -13,8 +14,9 @@ export default function PageAPropos() {
 
           <div className="w-[50%] px-10 flex flex-col justify-center">
             <SectionHeader eyebrow="Qui je suis" title="Anthony" highlight="Perret." />
-            <p className="font-dm-sans text-ivoire/66 mt-10">Basé dans le Sud-Ouest, je travaille en direct avec mes clients — sans intermédiaire, sans grande agence. Chaque projet est traité personnellement, de la première esquisse à la mise en ligne.</p>
-            <p className="font-dm-sans text-ivoire/66 mt-5">Mon objectif : vous livrer un site qui ressemble vraiment à votre métier, qui se charge vite, qui fonctionne sur mobile, et qui génère des contacts. Pas un template copié-collé.</p>
+            <p className="font-dm-sans text-ivoire/66 mt-10">Développeur web avec 4 ans d&apos;expérience en entreprise, j&apos;ai choisi de me lancer en freelance pour travailler autrement : en direct, sans intermédiaire, avec des clients qui ont un vrai projet à concrétiser.
+            </p>
+            <p className="font-dm-sans text-ivoire/66 mt-5">J&apos;ai créé Farga en mai 2026 pour accompagner artisans, commerçants et entrepreneurs dans leur présence en ligne — avec une approche qui va au-delà du simple site web.</p>
           </div>
           
         </div>
@@ -25,11 +27,18 @@ export default function PageAPropos() {
           <SectionHeader eyebrow="Parcours" title="Concepteur &" highlight="développeur." />
           
           <div className="flex flex-col gap-4 font-dm-sans text-ivoire/66 mt-10">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at velit tristique, rhoncus est sed, dictum risus. Aenean ut commodo magna. Aenean molestie tristique tristique. Maecenas accumsan consequat lectus at gravida. Nullam egestas nisi quis odio molestie, quis aliquam metus imperdiet. Etiam eget elementum nunc. Aliquam molestie leo ut posuere tempor. Integer orci velit, fringilla in velit sit amet, tristique imperdiet purus. Etiam vestibulum, felis ac vestibulum tincidunt, quam tortor ultricies neque, vitae pellentesque nulla lorem lacinia elit.</p>
-            
-            <p>Sed sed nisi ac purus fermentum egestas. Donec et nisl mauris. Curabitur ornare convallis hendrerit. Phasellus pellentesque commodo sollicitudin. Mauris cursus sem eget libero venenatis malesuada. Mauris bibendum pellentesque aliquet. Nullam elementum purus sed vulputate rutrum. Pellentesque et interdum velit. Aenean fermentum pharetra leo, gravida malesuada justo pellentesque luctus. Cras vehicula facilisis lectus in congue.</p>
+            <p>Je m&apos;appelle Anthony. Avant de créer Farga, j&apos;ai passé 4 ans en entreprise en tant que développeur web et logiciel, après 3 ans de formation en informatique. Des années qui m&apos;ont permis de travailler sur des projets très variés — domaines skiables, parcs d&apos;attractions, sites touristiques culturels et industriels, lieux de culte, organismes sociaux. Des secteurs et des contraintes différentes, mais à chaque fois la même exigence : livrer quelque chose qui fonctionne vraiment, pour des utilisateurs réels.
+            </p>
 
-            <p>Nullam venenatis felis vitae velit scelerisque lacinia. Ut convallis nulla non pretium rhoncus. Sed ut dolor eget turpis porta tempus. In convallis enim neque, convallis finibus tortor tempor vel. Phasellus luctus euismod hendrerit. Integer tincidunt consequat mauris ut tristique. Quisque nec neque consectetur, fermentum nulla eget, vulputate mi. Sed sit amet odio tincidunt, finibus ante sit amet, tincidunt ante. </p>
+            <p>Cette diversité, c&apos;est ce qui m&apos;a appris à m&apos;adapter vite, à comprendre un métier avant d&apos;en coder la vitrine.</p>
+            
+            <p>Avec l&apos;envie de travailler en direct avec mes clients et de piloter des projets de bout en bout, j&apos;ai décidé de me lancer à mon compte. Avant ça, j&apos;ai suivi une formation de concepteur designer UI pour compléter mon profil technique avec une vraie dimension design. Parce qu&apos;un développeur qui comprend l&apos;expérience utilisateur, ça change tout dans le résultat final.</p>
+
+            <p>Cette formation m&apos;a aussi ouvert sur des compétences complémentaires qui font aujourd&apos;hui partie intégrante de ma façon de travailler : étude de marché, stratégie de positionnement, création d&apos;identité visuelle, visibilité sur les réseaux sociaux, et référencement web. Autant d&apos;outils qui permettent de ne pas juste livrer un site, mais de construire une présence en ligne cohérente et efficace.</p>
+
+            <p>Farga, ce n&apos;est pas un nom choisi au hasard. Il représente l&apos;art ancestral de la forge, là où le métal brut devient, sous la chaleur et les coups répétés, une arme solide, précise, faite pour trancher. C&apos;est cette même exigence que j&apos;apporte à chaque projet web.</p>
+
+            <p>C&apos;est l&apos;image que je me fais du travail : celui des artisans et des entrepreneurs qui construisent leur réussite à la sueur de leurs efforts, jour après jour, coup après coup. Et c&apos;est aussi la promesse que je vous fais : mettre un savoir-faire précieux au service de votre projet — pour vous forger une présence en ligne solide, taillée pour durer.</p>
           </div>
           
         </div>

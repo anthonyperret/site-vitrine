@@ -17,21 +17,21 @@ const cards = [
     tagline: "Forgeron — Bordeaux",
     type: "One-page",
   },
-  {
-    title: "Boulangerie Cassan",
-    tagline: "Artisan — Montauban",
-    type: "Vitrine",
-  },
-  {
-    title: "Resto Le Calandre",
-    tagline: "Restaurateur — Albi",
-    type: "App mobile",
-  },
-  {
-    title: "Savonnerie Aumont",
-    tagline: "Artisan — Auch",
-    type: "E-commerce",
-  },
+  // {
+  //   title: "Boulangerie Cassan",
+  //   tagline: "Artisan — Montauban",
+  //   type: "Vitrine",
+  // },
+  // {
+  //   title: "Resto Le Calandre",
+  //   tagline: "Restaurateur — Albi",
+  //   type: "App mobile",
+  // },
+  // {
+  //   title: "Savonnerie Aumont",
+  //   tagline: "Artisan — Auch",
+  //   type: "E-commerce",
+  // },
 ];
 
 export default function ProductionsGrid() {

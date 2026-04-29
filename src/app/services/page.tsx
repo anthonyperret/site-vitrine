@@ -1,18 +1,25 @@
 import SectionHeader from "@/components/SectionHeader";
-import ServicesGrid from "@/components/ServicesGrid";
+import ServiceCard from "@/components/ServiceCard";
+import { services } from "@/data/services";
 
 export default function PageServices() {
   return (
     <div>
-      <section className="bg-acier">
+      <section className="bg-fonderie">
         <div className="px-100 py-40">
-          <SectionHeader eyebrow="Ce que je créé" title="Mes" highlight="services." />
+          <SectionHeader eyebrow="mes services" title="Choissisez votre" highlight="formule." />
 
-          <ServicesGrid />
+          <div className="flex flex-col gap-5 mt-30">
+
+            {services.map((service, i) => (
+              <ServiceCard key={i} service={service} />
+            ))}
+
+          </div>
         </div>
       </section>
 
-      <section className="h-screen bg-fonderie">
+      <section className="bg-acier">
         <div className="px-100 py-40">
           <SectionHeader eyebrow="Comment ça marche" title="Mon" highlight="processus." />
         </div>
