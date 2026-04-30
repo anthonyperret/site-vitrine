@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Bebas_Neue, DM_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -37,9 +35,7 @@ export default function RootLayout({
       className={`${bebasNeue.variable} ${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar></Navbar>
         {children}
-        <Footer></Footer>
         <Analytics />
       </body>
     </html>
