@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -39,6 +40,7 @@ export default function RootLayout({
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
+        <Analytics />
       </body>
     </html>
   );
