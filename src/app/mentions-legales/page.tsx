@@ -1,6 +1,11 @@
-"use client";
-
+import type { Metadata } from "next";
 import SectionHeader from "@/components/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "Mentions Légales",
+  description:
+    "Mentions légales et politique de confidentialité du site farga.me — éditeur, hébergement, propriété intellectuelle et RGPD.",
+};
 
 export default function MentionsLegales() {
 

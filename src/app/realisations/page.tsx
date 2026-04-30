@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import ProductionsGrid from "@/components/ProductionsGrid";
 import SectionHeader from "@/components/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "Réalisations",
+  description:
+    "Découvrez les projets web réalisés par Farga - sites vitrine, e-commerce et applications sur mesure pour artisans, commerçants et indépendants.",
+};
 
 export default function PageRealisation() {
   return (

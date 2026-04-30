@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
 import { services } from "@/data/services";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description:
+    "Création de sites vitrine, e-commerce, applications web sur mesure pour les artisans, commerçants et indépendants - découvrez les formules proposées par Farga, pour développer votre présence en ligne.",
+};
 
 export default function PageServices() {
   return (

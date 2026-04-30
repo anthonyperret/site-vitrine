@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import ServicesGrid from "@/components/ServicesGrid";
 import SectionHeader from "@/components/SectionHeader";
 import ReviewsGrid from "@/components/ReviewsGrid";
 import ProductionsGrid from "@/components/ProductionsGrid";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "FARGA - Forgez votre présence en ligne",
+  description:
+    "Farga crée des sites vitrine, e-commerce et applications sur mesure pour les artisans, commerçants et indépendants. Accompagnement personnalisé et tarifs adaptés aux petites structures.",
+};
 
 export default function Home() {
   return (

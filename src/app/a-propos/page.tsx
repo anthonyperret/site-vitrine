@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "À Propos",
+  description:
+    "Anthony Perret, développeur web freelance basé à Tarbes et fondateur de Farga. Développement web et design au service des artisans, commerçants et indépendants.",
+};
 
 export default function PageAPropos() {
   return (

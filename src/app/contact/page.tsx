@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import SectionHeader from "@/components/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Un projet en tête ? Contactez Farga pour un devis gratuit et sans engagement. Développement web et design pour commerçants, artisans et indépendants.",
+};
 
 export default function PageContact() {
   return (

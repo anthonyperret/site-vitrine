@@ -17,8 +17,12 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "FARGA - Agence Web",
-  description: "Agence web sur-mesure pour artisans et commerçants",
+  title: {
+    default: "FARGA - Agence Web",
+    template: "%s - FARGA",
+  },
+  description:
+    "Agence web sur-mesure pour artisans, commerçants et indépendants — sites vitrine, e-commerce et applications web.",
 };
 
 export default function RootLayout({
