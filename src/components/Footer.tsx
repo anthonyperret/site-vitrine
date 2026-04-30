@@ -19,7 +19,7 @@ export default function Footer() {
 
         <ul className="flex-1 flex justify-end gap-5 text-sm">
           <li><Link href="/mentions-legales">Mentions légales</Link></li>
-          <li><Link href="/politique-de-confidentialite">Politique de confidentialité</Link></li>
+          <li><Link href="/mentions-legales#politique-de-confidentialite">Politique de confidentialité</Link></li>
           <li><Link href="/contact">Contact</Link></li>
         </ul>
 
