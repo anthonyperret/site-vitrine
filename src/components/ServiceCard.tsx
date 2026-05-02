@@ -1,13 +1,21 @@
+"use client";
 import Link from "next/link";
 import { Service } from "@/data/services";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 interface Props {
   service: Service;
 }
 
 export default function ServiceCard({ service }: Props) {
+  const { ref, visible } = useScrollReveal(0.5);
+
   return(
-    <div id={service.number} className="scroll-mt-30 flex w-full border border-ivoire/33 rounded-sm hover:border-cuivre">
+    <div
+      ref={ref as React.RefObject<HTMLDivElement>}
+      id={service.number}
+      className={`scroll-mt-30 flex w-full border border-ivoire/33 rounded-sm hover:border-cuivre transition-colors ${visible ? "animate-fade-up" : "opacity-0"}`}
+    >
 
       <div className={`${service.featured ? "bg-cuivre" : "bg-acier border-r"} w-1/3 px-10 py-10 border-ivoire/33 flex flex-col justify-between gap-20`}>
         <div className="flex flex-col gap-2">

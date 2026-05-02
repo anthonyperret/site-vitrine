@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const { ref, visible } = useScrollReveal(0.15);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -32,7 +34,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div>
+    <div ref={ref as React.RefObject<HTMLDivElement>} className={visible ? "animate-fade-up" : "opacity-0"}>
       <form onSubmit={handleSubmit} className="flex flex-col gap-5">
 
         <div className="flex gap-5">

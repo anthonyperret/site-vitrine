@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
+import SmoothHashScroll from "@/components/SmoothHashScroll";
 import { services } from "@/data/services";
 
 export const metadata: Metadata = {
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 export default function PageServices() {
   return (
     <div>
+      <SmoothHashScroll />
       <section className="bg-fonderie">
         <div className="px-100 py-40">
           <SectionHeader eyebrow="mes services" title="Choissisez votre" highlight="formule." />

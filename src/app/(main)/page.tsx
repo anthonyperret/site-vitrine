@@ -3,6 +3,7 @@ import ServicesGrid from "@/components/ServicesGrid";
 import SectionHeader from "@/components/SectionHeader";
 import ReviewsGrid from "@/components/ReviewsGrid";
 import ProductionsGrid from "@/components/ProductionsGrid";
+import Button from "@/components/Button";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -32,12 +33,8 @@ export default function Home() {
           <div>
             <p className="animate-fade-up w-2xl font-dm-sans text-ivoire/66" style={{ animationDelay: "0.45s" }}>Sites vitrine, e-commerce, applications — conçus sur mesure pour les artisans, commerçants et indépendants qui veulent enfin exister là où leurs clients les cherchent.</p>
             <div className="animate-fade-up flex gap-5 mt-10" style={{ animationDelay: "0.6s" }}>
-              <Link href="/services">
-                <button className="bg-cuivre text-ivoire px-6 py-2 rounded-sm font-dm-sans">Découvrir les services</button>
-              </Link>
-              <Link href="/realisations">
-                <button className="border border-ivoire/66 text-ivoire/66 px-6 py-2 rounded-sm font-dm-sans">Voir les réalisations</button>
-              </Link>
+              <Button type="primary" label="Découvrir les services" path="/services"></Button>
+              <Button type="secondary" label="Voir les réalisations" path="/realisations"></Button>
             </div>
           </div>
           
@@ -45,46 +42,33 @@ export default function Home() {
         </div>
         
       </section>
+
       <section className="bg-acier">
         <div className="px-100 py-30">
           <SectionHeader eyebrow="Ce que je créé" title="Mes" highlight="services." />
-
           <ServicesGrid />
-
           <div className="w-full flex justify-center mt-15">
-            <Link href="/services">
-              <button className="bg-cuivre text-ivoire px-6 py-2 rounded-sm font-dm-sans">Découvrir tous les services</button>
-            </Link>
+            <Button type="primary" label="Découvrir tous les services" path="/services"></Button>
           </div>
-          
         </div>
       </section>
 
       <section className="bg-fonderie">
         <div className="px-100 py-30">
           <SectionHeader eyebrow="Portfolio" title="Dernières" highlight="réalisations." />
-
           <ProductionsGrid />
-
           <div className="w-full flex justify-center mt-15">
-            <Link href="/realisations">
-              <button className="border border-ivoire/66 text-ivoire/66 px-6 py-2 rounded-sm font-dm-sans">Voir les réalisations</button>
-            </Link>
+            <Button type="secondary" label="Voir les réalisations" path="/realisations"></Button>
           </div>
         </div>
       </section>
 
-
       <section className="bg-acier">
         <div className="px-100 py-30">
           <SectionHeader eyebrow="Ce qu'ils disent" title="Ils m'ont fait" highlight="confiance." />
-
           <ReviewsGrid />
-
           <div className="w-full flex justify-center mt-15">
-            <Link href="/contact">
-              <button className="bg-cuivre text-ivoire px-6 py-2 rounded-sm font-dm-sans">Soyez le prochain</button>
-            </Link>
+            <Button type="primary" label="Soyez le prochain" path="/contact"></Button>
           </div>
         </div>
       </section>
