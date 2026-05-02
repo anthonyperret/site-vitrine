@@ -20,7 +20,7 @@ export default function MentionsLegales() {
                     <p>Le site farga.me est édité par Anthony Perret, micro-entrepreneur, exerçant sous le nom commercial Farga.</p>
 
                     <p>Adresse : 22 rue Maurice Ravel, 65000 Tarbes, France</p>
-                    <p>SIRET : en cours d&apos;attribution</p>
+                    <p>SIREN : 104396932</p>
                     <p>Contact : contact@farga.me</p>
                     
                     <hr className="text-ivoire/33 my-5" />
