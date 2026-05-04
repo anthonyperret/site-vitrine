@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ProductionsGrid from "@/components/ProductionsGrid";
-import SectionHeader from "@/components/SectionHeader";
+import Section from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "Réalisations",
@@ -11,13 +11,11 @@ export const metadata: Metadata = {
 export default function PageRealisation() {
   return (
     <div>
-      <section className="bg-fonderie">
-				<div className="px-100 py-40">
-					<SectionHeader eyebrow="Portfolio" title="Dernières" highlight="réalisations." />
 
-					<ProductionsGrid />
-				</div>
-			</section>
+      <Section bg="fonderie" eyebrow="Portfolio" title="Dernières" highlight="réalisations.">
+        <ProductionsGrid limit={6} />
+      </Section>
+
     </div>
   )
 }

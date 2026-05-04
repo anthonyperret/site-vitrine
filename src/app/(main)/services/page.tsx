@@ -5,6 +5,7 @@ import SmoothHashScroll from "@/components/SmoothHashScroll";
 import { services } from "@/data/services";
 import ProcessGrid from "@/components/ProcessGrid";
 import Button from "@/components/Button";
+import Section from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -16,31 +17,25 @@ export default function PageServices() {
   return (
     <div>
       <SmoothHashScroll />
-      <section className="bg-fonderie">
-        <div className="px-100 py-40">
-          <SectionHeader eyebrow="mes services" title="Choissisez votre" highlight="formule." />
 
-          <div className="flex flex-col gap-5 mt-30">
+      <Section bg="fonderie" eyebrow="mes services" title="Choissisez votre" highlight="formule.">
+        <div className="flex flex-col gap-5 mt-30">
 
-            {services.map((service, i) => (
-              <ServiceCard key={i} service={service} />
-            ))}
+          {services.map((service, i) => (
+            <ServiceCard key={i} service={service} />
+          ))}
 
           </div>
+      </Section>
+
+
+      <Section bg="acier" eyebrow="Comment ça marche" title="Mon" highlight="processus.">
+        <ProcessGrid />
+        <div className="w-full flex justify-center mt-15">
+          <Button type="primary" label="Je demande mon devis" path="/contact"></Button>
         </div>
-      </section>
+      </Section>
 
-      <section className="bg-acier">
-        <div className="px-100 py-30">
-          <SectionHeader eyebrow="Comment ça marche" title="Mon" highlight="processus." />
-
-          <ProcessGrid />
-
-          <div className="w-full flex justify-center mt-15">
-            <Button type="primary" label="Je demande mon devis" path="/contact"></Button>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import SectionHeader from "@/components/SectionHeader";
+import Paragraph from "@/components/Paragraph";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -11,27 +12,30 @@ export const metadata: Metadata = {
 export default function PageContact() {
   return (
     <div>
-      <section className="bg-fonderie flex justify-center items-center relative overflow-hidden">
+      <section className="h-screen bg-fonderie px-100 py-70 flex justify-center items-center">
 
-        <div className="px-100 py-70 flex z-10">
+        <div className="w-1/2 px-10">
 
-          <div className="w-[50%] px-10">
-            <SectionHeader eyebrow="Travaillons ensemble" title="Parlons de votre" highlight="projet." />
-            <p className="font-dm-sans text-ivoire/66 mt-10">Devis gratuit et sans engagement. Je vous réponds dans les meilleurs délais avec une réponse claire et adaptée à votre projet.</p>
+          <SectionHeader eyebrow="Travaillons ensemble" title="Parlons de votre" highlight="projet." />
 
-            <ul className="mt-5 text-ivoire/66 font-dm-sans">
-              <li><span className="text-cuivre mr-2">•</span>contact@farga.fr</li>
-              <li><span className="text-cuivre mr-2">•</span>07 50 27 97 42</li>
-              <li><span className="text-cuivre mr-2">•</span>Tarbes — Hautes-Pyrénées</li>
-            </ul>
-            
-          </div>
+          <Paragraph i={0}>
+            Devis gratuit et sans engagement. Je reviens vers vous dans les meilleurs délais avec une réponse adaptée à votre projet.
+          </Paragraph>
 
-          <div className="w-[50%] px-10">
-            <ContactForm />
-          </div>
+          <Paragraph i={1}>
+            <span className="text-cuivre mr-2">•</span>contact@farga.fr<br/>
+            <span className="text-cuivre mr-2">•</span>07 50 27 97 42<br/>
+            <span className="text-cuivre mr-2">•</span>Tarbes - Hautes-Pyrénées<br/>
+          </Paragraph>
+
           
         </div>
+
+        <div className="w-1/2 px-10">
+          <ContactForm />
+        </div>
+          
+
       </section>
     </div>
   )
