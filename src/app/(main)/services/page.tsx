@@ -3,6 +3,8 @@ import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
 import SmoothHashScroll from "@/components/SmoothHashScroll";
 import { services } from "@/data/services";
+import ProcessGrid from "@/components/ProcessGrid";
+import Button from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -29,8 +31,14 @@ export default function PageServices() {
       </section>
 
       <section className="bg-acier">
-        <div className="px-100 py-40">
+        <div className="px-100 py-30">
           <SectionHeader eyebrow="Comment ça marche" title="Mon" highlight="processus." />
+
+          <ProcessGrid />
+
+          <div className="w-full flex justify-center mt-15">
+            <Button type="primary" label="Je demande mon devis" path="/contact"></Button>
+          </div>
         </div>
       </section>
     </div>
