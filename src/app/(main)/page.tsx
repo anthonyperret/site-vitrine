@@ -7,7 +7,9 @@ import HeroSection from "@/components/HeroSection";
 import Section from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "FARGA - Forgez votre présence en ligne",
+  title: {                                                
+    absolute: "FARGA - Forgez votre présence en ligne",
+  },
   description:
     "Farga crée des sites vitrine, e-commerce et applications sur mesure pour les artisans, commerçants et indépendants. Accompagnement personnalisé et tarifs adaptés aux petites structures.",
 };
