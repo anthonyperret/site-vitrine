@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
 import SmoothHashScroll from "@/components/SmoothHashScroll";
 import { services } from "@/data/services";
