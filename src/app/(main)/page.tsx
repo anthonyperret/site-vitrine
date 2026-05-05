@@ -21,21 +21,21 @@ export default function Home() {
 
       <Section bg="acier" eyebrow="Ce que je créé" title="Mes" highlight="services.">
         <ServicesGrid />
-        <div className="w-full flex justify-center mt-15">
+        <div className="w-full flex justify-center lg:mt-15 mt-10">
           <Button type="primary" label="Découvrir tous les services" path="/services"></Button>
         </div>
       </Section>
 
       <Section bg="fonderie" eyebrow="Portfolio" title="Dernières" highlight="réalisations.">
         <ProductionsGrid limit={3} />
-        <div className="w-full flex justify-center mt-15">
+        <div className="w-full flex justify-center lg:mt-15 mt-10">
           <Button type="secondary" label="Voir les réalisations" path="/realisations"></Button>
         </div>
       </Section>
 
       <Section bg="acier" eyebrow="Ce qu'ils disent" title="Ils m'ont fait" highlight="confiance.">
         <ReviewsGrid />
-        <div className="w-full flex justify-center mt-15">
+        <div className="w-full flex justify-center lg:mt-15 mt-10">
           <Button type="primary" label="Soyez le prochain" path="/contact"></Button>
         </div>
       </Section>

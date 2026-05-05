@@ -16,14 +16,14 @@ export default function ReviewItem({ review, i }: Props) {
 
     <div
       ref={ref as React.RefObject<HTMLDivElement>}
-      className={`flex-1 cursor-pointer bg-fonderie text-ivoire px-10 pt-10 pb-10 flex flex-col gap-5 border-t-3 border-transparent hover:border-cuivre hover:bg-fonderie/80 transition-colors ${visible ? "animate-fade-up" : "opacity-0"}`}
+      className={`flex-1 cursor-pointer bg-fonderie text-ivoire lg:px-10 lg:py-10 px-5 py-5 flex flex-col gap-5 border-t-3 border-transparent hover:border-cuivre hover:bg-fonderie/80 transition-colors ${visible ? "animate-fade-up" : "opacity-0"}`}
       style={{ animationDelay: `${i * delay}s` }}
     >
-      <span className="text-cuivre text-4xl font-bebas-neue">&quot;</span>
-      <p className="font-dm-sans text-ivoire/66 text-sm italic">{review.text}</p>
+      <span className="text-cuivre text-4xl leading-1 font-bebas-neue">&quot;</span>
+      <p className="text-ivoire/66 italic">{review.text}</p>
       <div className="mt-auto">
-        <p className="text-ivoire text-xs mb-1">{review.client}</p>
-        <p className="text-xs text-ivoire/33 tagline">{review.job}</p>
+        <div className="text-ivoire text-sm mb-1">{review.client}</div>
+        <div className="text-ivoire/33 text-xs tagline">{review.job}</div>
       </div>
 
     </div>

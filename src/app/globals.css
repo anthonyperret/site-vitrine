@@ -7,7 +7,6 @@
   --fonderie: #0b1014;
   --acier: #1f252b;
   --cuivre: #db640e;
-  --braise: #A8492B;
   --ivoire: #ece7e1;
 }
 
@@ -17,7 +16,6 @@
   --color-fonderie: var(--fonderie);
   --color-acier: var(--acier);
   --color-cuivre: var(--cuivre);
-  --color-braise: var(--braise);
   --color-ivoire: var(--ivoire);
   --font-bebas-neue: var(--font-bebas-neue), system-ui;
   --font-dm-sans: var(--font-dm-sans), sans-serif;
@@ -40,15 +38,26 @@ body {
   color: var(--foreground);
 }
 
-p {
-  font-family: var(--font-dm-sans);
-}
-
 button {
   cursor: pointer;
 }
 
 @utility tagline {
-  @apply uppercase tracking-widest;
+  @apply uppercase tracking-widest font-dm-sans;
 }
 
+
+h2 {
+  @apply text-5xl lg:text-7xl;
+  @apply font-bebas-neue font-bold uppercase;
+}
+
+h3 {
+  @apply text-2xl lg:text-3xl;
+  @apply font-bebas-neue font-bold uppercase;
+}
+
+p {
+  @apply text-xs lg:text-sm;
+  @apply font-dm-sans;
+}

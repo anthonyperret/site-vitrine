@@ -4,7 +4,7 @@ import ReviewItem from "./ReviewItem";
 export default function ReviewsGrid() {
 
   return (
-    <div className="grid grid-cols-3 gap-0.5 mt-30">
+    <div className="grid lg:grid-cols-3 gap-0.5 lg:mt-30 mt-10">
       {reviews.map((review, i) => (
         
         <ReviewItem

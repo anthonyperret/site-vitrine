@@ -18,7 +18,7 @@ export default function ProductionItem({production, i} : Props) {
     <Link href={production.url} className="flex-1">
       <div
         ref={ref as React.RefObject<HTMLDivElement>}
-        className={`relative h-62 cursor-pointer bg-acier overflow-hidden group transition-colors ${visible ? "animate-fade-up" : "opacity-0"}`}
+        className={`relative lg:h-62 h-40 cursor-pointer bg-acier overflow-hidden group transition-colors ${visible ? "animate-fade-up" : "opacity-0"}`}
         style={{ animationDelay: `${i * delay}s` }}
       >
 
