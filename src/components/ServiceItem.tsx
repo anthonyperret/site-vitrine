@@ -21,7 +21,7 @@ export default function ServiceItem({service, i} : Props) {
         style={{ animationDelay: `${i * delay}s` }}
       >
         <div className="flex lg:flex-col gap-3 lg:gap-5">
-          <span className=" font-bebas-neue lg:text-acier lg:text-6xl text-2xl text-cuivre">{service.number}</span>
+          <span className="font-bebas-neue lg:text-acier lg:text-6xl text-2xl text-cuivre">{service.number}</span>
           <h3 className="">{service.title}</h3>
         </div>
         <p className="font-dm-sans text-ivoire/66 text-sm">{service.desc2}</p>

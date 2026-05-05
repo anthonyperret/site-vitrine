@@ -16,9 +16,10 @@ export default function PageServices() {
   return (
     <div>
       <SmoothHashScroll />
-
+      <div className="lg:hidden pt-20 bg-fonderie"></div>
       <Section bg="fonderie" eyebrow="mes services" title="Choissisez votre" highlight="formule.">
-        <div className="flex flex-col gap-5 mt-30">
+
+        <div className="flex flex-col gap-5 lg:mt-30 mt-10">
 
           {services.map((service, i) => (
             <ServiceCard key={i} service={service} />
@@ -30,7 +31,7 @@ export default function PageServices() {
 
       <Section bg="acier" eyebrow="Comment ça marche" title="Mon" highlight="processus.">
         <ProcessGrid />
-        <div className="w-full flex justify-center mt-15">
+        <div className="w-full flex justify-center lg:mt-15 mt-10">
           <Button type="primary" label="Je demande mon devis" path="/contact"></Button>
         </div>
       </Section>

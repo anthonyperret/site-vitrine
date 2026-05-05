@@ -3,7 +3,7 @@ import ProcessItem from "./ProcessItem";
 export default function ProcessGrid() {
 
   return(
-    <div className="grid grid-cols-4 gap-1 mt-30">
+    <div className="grid lg:grid-cols-4 gap-1 lg:mt-30 mt-10">
 
       <ProcessItem number="01" title="Découverte" desc="On se rencontre pour comprendre votre métier, vos clients, vos objectifs. Pas de jargon, juste une conversation simple." i={0} />
 
