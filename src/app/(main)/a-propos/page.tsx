@@ -15,9 +15,9 @@ export default function PageAPropos() {
   return (
     <div>
 
-      <section className="bg-fonderie px-100 py-40 flex justify-center items-center">
+      <section className="bg-fonderie lg:px-100 lg:py-40 px-5 py-10 pt-30 lg:flex justify-center items-center">
       
-        <div className="w-1/2 px-10">
+        <div className="hidden lg:block w-1/2">
 
           <Img
             src="/photo_de_profil.png"
@@ -27,7 +27,7 @@ export default function PageAPropos() {
           
         </div>
   
-        <div className="w-1/2 px-10 flex flex-col justify-center">
+        <div className="lg:w-1/2 flex flex-col justify-center">
           <SectionHeader eyebrow="Qui je suis" title="Anthony" highlight="Perret." />
 
           <Paragraph i={0}>
@@ -38,6 +38,16 @@ export default function PageAPropos() {
             J&apos;ai créé Farga en mai 2026 pour accompagner artisans, commerçants et entrepreneurs dans leur présence en ligne — avec une approche qui va au-delà du simple site web.
           </Paragraph>
 
+        </div>
+
+        <div className="lg:hidden mt-10">
+
+          <Img
+            src="/photo_de_profil.png"
+            alt="Anthony Perret"
+            width={1024}
+            height={1536} />
+          
         </div>
             
       </section>

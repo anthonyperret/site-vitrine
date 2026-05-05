@@ -14,7 +14,7 @@ export default function HeroSection() {
 
 
 
-      <div className="flex flex-col lg:gap-5 gap-3 relative z-10 w-full h-full justify-center items-center px-5 lg:px-0">
+      <div className="flex flex-col lg:gap-5 gap-3 relative z-10 w-full h-full justify-center lg:items-center px-5 lg:px-0">
 
         <div>
           <p className="animate-fade-up text-sm text-cuivre tagline mb-4" style={{ animationDelay: "0.1s" }}>

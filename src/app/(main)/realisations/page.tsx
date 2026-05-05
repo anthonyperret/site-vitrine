@@ -12,6 +12,7 @@ export default function PageRealisation() {
   return (
     <div>
 
+      <div className="lg:hidden pt-20 bg-fonderie"></div>
       <Section bg="fonderie" eyebrow="Portfolio" title="Dernières" highlight="réalisations.">
         <ProductionsGrid limit={6} />
       </Section>
