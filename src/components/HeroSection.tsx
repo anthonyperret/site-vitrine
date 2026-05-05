@@ -2,7 +2,7 @@ import Button from "./Button";
 
 export default function HeroSection() {
   return(
-    <section className="lg:h-screen lg:py-0 py-10 pt-40 bg-fonderie relative overflow-hidden">
+    <section className="h-screen lg:py-0 py-10 pt-40 bg-fonderie relative overflow-hidden">
 
       <span
         className="absolute lg:top-38 top-50 left-1/2 -translate-x-1/2 select-none font-bebas-neue text-[40vw] leading-none"
