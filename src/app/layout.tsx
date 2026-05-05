@@ -17,6 +17,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.farga.me'),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: "FARGA - Agence Web",
     template: "%s - FARGA",
