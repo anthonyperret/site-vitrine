@@ -46,6 +46,10 @@ button {
   @apply uppercase tracking-widest font-dm-sans;
 }
 
+h1 {
+  @apply text-6xl lg:text-9xl;
+  @apply font-bebas-neue font-bold uppercase;
+}
 
 h2 {
   @apply text-5xl lg:text-7xl;
