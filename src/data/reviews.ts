@@ -7,7 +7,7 @@ export interface Review {
 export const reviews: Review[] = [
   {
     client: "Marc Vidal",
-    text: "Mon site a été livré en deux semaines, exactement comme je l'avais imaginé. Depuis, je reçois des demandes de clients qui m'ont trouvé sur Google — ce qui n'arrivait jamais avant.",
+    text: "Mon site a été livré en deux semaines, exactement comme je l'avais imaginé. Depuis, je reçois des demandes de clients qui m'ont trouvé sur Google.",
     job: "Ébéniste — Toulouse",
   },
   {
