@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function PageContact() {
   return (
     <div>
-      <section className="lg:h-screen bg-fonderie lg:px-100 lg:py-70 px-5 py-10 pt-30 flex lg:flex-row flex-col justify-center items-center gap-5">
+      <section className="lg:h-screen bg-fonderie lg:px-100 lg:py-70 px-5 py-10 pt-30 flex lg:flex-row flex-col lg:justify-center lg:items-center gap-5">
 
         <div className="lg:w-1/2 lg:px-10">
 
