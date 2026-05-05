@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default function PageContact() {
   return (
     <div>
-      <section className="h-screen bg-fonderie px-100 py-70 flex justify-center items-center">
+      <section className="lg:h-screen bg-fonderie lg:px-100 lg:py-70 px-5 py-10 pt-30 flex lg:flex-row flex-col justify-center items-center gap-5">
 
-        <div className="w-1/2 px-10">
+        <div className="lg:w-1/2 lg:px-10">
 
           <SectionHeader eyebrow="Travaillons ensemble" title="Parlons de votre" highlight="projet." />
 
@@ -22,7 +22,7 @@ export default function PageContact() {
             Devis gratuit et sans engagement. Je reviens vers vous dans les meilleurs délais avec une réponse adaptée à votre projet.
           </Paragraph>
 
-          <Paragraph i={1}>
+          <Paragraph i={0}>
             <span className="text-cuivre mr-2">•</span>contact@farga.fr<br/>
             <span className="text-cuivre mr-2">•</span>07 50 27 97 42<br/>
             <span className="text-cuivre mr-2">•</span>Tarbes - Hautes-Pyrénées<br/>
@@ -31,7 +31,7 @@ export default function PageContact() {
           
         </div>
 
-        <div className="w-1/2 px-10">
+        <div className="lg:w-1/2 lg:px-10">
           <ContactForm />
         </div>
           

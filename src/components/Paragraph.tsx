@@ -15,7 +15,7 @@ export default function Footer({children, i}: Props) {
   return (
     <p
       ref={ref as React.RefObject<HTMLDivElement>}
-      className={`font-dm-sans text-ivoire/66 mt-8 ${visible ? "animate-fade-up" : "opacity-0"}`}
+      className={`text-ivoire/66 lg:mt-8 mt-5 ${visible ? "animate-fade-up" : "opacity-0"}`}
       style={{ animationDelay: `${i * delay}s` }}>
       {children}
     </p>
