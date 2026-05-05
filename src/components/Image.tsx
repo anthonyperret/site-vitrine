@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function Img({ src, alt, width, height }: Props) {
-  const { ref, visible } = useScrollReveal(1);
+  const { ref, visible } = useScrollReveal(0.2);
 
   return(
 

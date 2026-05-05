@@ -17,7 +17,7 @@ export default function PageAPropos() {
 
       <section className="bg-fonderie lg:px-100 lg:py-40 px-5 py-10 pt-30 lg:flex justify-center items-center">
       
-        <div className="hidden lg:block w-1/2">
+        <div className="hidden lg:block w-1/2 px-10">
 
           <Img
             src="/photo_de_profil.png"
@@ -27,7 +27,7 @@ export default function PageAPropos() {
           
         </div>
   
-        <div className="lg:w-1/2 flex flex-col justify-center">
+        <div className="lg:w-1/2 lg:px-10 flex flex-col justify-center">
           <SectionHeader eyebrow="Qui je suis" title="Anthony" highlight="Perret." />
 
           <Paragraph i={0}>
