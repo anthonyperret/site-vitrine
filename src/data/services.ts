@@ -2,6 +2,7 @@ export interface Service {
   number: string;
   title: string;
   titleAccent?: string;
+  tagline?: string;
   desc1: string;
   desc2: string;
   price: number;
@@ -14,8 +15,8 @@ export const services: Service[] = [
     number: "01",
     title: "Site ",
     titleAccent: "one-page",
-    desc1: "La solution rapide et efficace. Tout ce qu'il faut pour exister en ligne et convaincre.",
-    desc2: "Parfait pour lancer rapidement une activité, présenter un événement ou tester une idée. La one-page regroupe l'essentiel de votre projet dans un format épuré, moderne et pensé pour aller à l'essentiel.",
+    desc1: "Tout ce qu'il faut pour exister en ligne, dans un format rapide et efficace.",
+    desc2: "Tout ce qu'il faut pour exister en ligne, dans un format rapide et efficace. Idéal pour lancer une activité, présenter un événement ou tester une idée — la one-page regroupe l'essentiel dans un design épuré et pensé pour convaincre.",
     price: 399,
     featured: false,
     items: [
@@ -26,8 +27,8 @@ export const services: Service[] = [
     number: "02",
     title: "Site ",
     titleAccent: "vitrine",
-    desc1: "La solution professionnelle. Un site soigné qui reflète votre sérieux et donne envie d'aller plus loin.",
-    desc2: "Un site vitrine multi-pages pour présenter votre activité sous son meilleur jour. Chaque page est pensée pour guider le visiteur, valoriser votre expertise et vous démarquer de la concurrence.",
+    desc1: "Un site soigné, multi-pages, qui reflète votre sérieux et donne envie d'aller plus loin.",
+    desc2: "Un site soigné, multi-pages, qui reflète votre sérieux et donne envie d'aller plus loin. Chaque page est pensée pour guider le visiteur, valoriser votre expertise et vous démarquer de la concurrence.",
     price: 799,
     featured: true,
     items: [
@@ -38,8 +39,8 @@ export const services: Service[] = [
     number: "03",
     title: "Site ",
     titleAccent: "e-commerce",
-    desc1: "La solution complète pour lancer votre boutique en ligne et commencer à vendre rapidement.",
-    desc2: "Une solution e-commerce complète pour vendre vos produits en ligne simplement. Catalogue clair, tunnel d'achat optimisé, paiement sécurisé et gestion des stocks intégrée.",
+    desc1: "Une boutique en ligne complète pour vendre vos produits simplement et efficacement.",
+    desc2: "Une boutique en ligne complète pour vendre vos produits simplement et efficacement. Catalogue clair, tunnel d'achat optimisé, paiement sécurisé et gestion des stocks — tout est prêt pour que vous puissiez vous concentrer sur votre business.",
     price: 1399,
     featured: false,
     items: [
@@ -50,8 +51,8 @@ export const services: Service[] = [
     number: "04",
     title: "Solution ",
     titleAccent: "métier",
-    desc1: "La solution sur mesure. De l'idée au produit final, on construit ce dont vous avez vraiment besoin.",
-    desc2: "Backoffice, application mobile, plateforme métier, outil interne — chaque projet est unique et mérite une solution adaptée. On part de votre besoin et on construit ensemble quelque chose qui y répond vraiment.",
+    desc1: "De l'idée au produit final, on construit ensemble ce dont vous avez vraiment besoin.",
+    desc2: "De l'idée au produit final, on construit ensemble ce dont vous avez vraiment besoin. Application mobile, backoffice, plateforme métier ou outil interne — chaque projet est unique et mérite une approche sur mesure.",
     price: 0,
     featured: false,
     items: [

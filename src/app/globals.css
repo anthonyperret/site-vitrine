@@ -21,9 +21,9 @@
   --font-dm-sans: var(--font-dm-sans), sans-serif;
   --animate-fade-up: fade-up 0.7s ease both;
 
-  --breakpoint-md: 764px;
-  --breakpoint-lg: 1074px;
-  --breakpoint-xl: 1920px;
+  --breakpoint-md: 784px;
+  --breakpoint-lg: 1344px;
+  --breakpoint-xl: 1579px;
 
 }
 

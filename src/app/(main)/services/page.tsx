@@ -17,7 +17,7 @@ export default function PageServices() {
     <div>
       <SmoothHashScroll />
 
-      <Section bg="fonderie" eyebrow="mes services" title="Choissisez votre" highlight="formule.">
+      <Section bg="fonderie" title="Choissisez votre" highlight="formule.">
 
         <div className="flex flex-col gap-5 lg:mt-30 mt-10">
 
@@ -29,7 +29,7 @@ export default function PageServices() {
       </Section>
 
 
-      <Section bg="acier" eyebrow="Comment ça marche" title="Mon" highlight="processus.">
+      <Section bg="acier" title="Mon" highlight="processus.">
         <ProcessGrid />
         <div className="w-full flex justify-center lg:mt-15 mt-10">
           <Button type="primary" label="Je demande mon devis" path="/contact"></Button>

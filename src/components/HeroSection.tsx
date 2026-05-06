@@ -23,7 +23,7 @@ export default function HeroSection() {
             Agence web — sud-ouest
           </p>
 
-          <h1 className="animate-fade-up text-ivoire lg:w-4xl md:w-2xl" style={{   animationDelay: "0.2s" }}>
+          <h1 className="animate-fade-up text-white lg:w-4xl md:w-2xl" style={{ animationDelay: "0.2s" }}>
             Forgez votre présence
             <span className="accent"> en ligne.</span>
           </h1>
