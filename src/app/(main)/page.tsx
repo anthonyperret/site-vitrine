@@ -19,7 +19,7 @@ export default function Home() {
     <div>
       <HeroSection />
 
-      <Section bg="acier" title="Mes" highlight="services.">
+      <Section bg="acier" title="Nos" highlight="services.">
         <ServicesGrid />
         <div className="w-full flex justify-center lg:mt-15 mt-10">
           <Button type="primary" label="Découvrir tous les services" path="/services"></Button>

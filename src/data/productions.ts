@@ -7,38 +7,20 @@ export interface Production {
 
 export const productions: Production[] = [
   {
-    title: "Ébénisterie Vidal",
-    tagline: "Artisan — Toulouse",
-    type: "Vitrine",
-    url: "",
-  },
-  {
-    title: "La Miellerie du Gers",
-    tagline: "Producteur — Gers",
-    type: "E-commerce",
-    url: "",
-  },
-  {
-    title: "Atelier Ferron",
-    tagline: "Forgeron — Bordeaux",
+    title: "Prochainement",
+    tagline: "",
     type: "One-page",
     url: "",
   },
   {
-    title: "Boulangerie Cassan",
-    tagline: "Artisan — Montauban",
+    title: "Prochainement",
+    tagline: "",
     type: "Vitrine",
     url: "",
   },
   {
-    title: "Resto Le Calandre",
-    tagline: "Restaurateur — Albi",
-    type: "App mobile",
-    url: "",
-  },
-  {
-    title: "Savonnerie Aumont",
-    tagline: "Artisan — Auch",
+    title: "Prochainement",
+    tagline: "",
     type: "E-commerce",
     url: "",
   },

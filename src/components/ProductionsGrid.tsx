@@ -8,7 +8,7 @@ interface Props {
 export default function ProductionsGrid({limit}: Props) {
 
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-0.5 lg:mt-30 mt-10">
+    <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-0.5 lg:mt-30 mt-10">
       {productions.slice(0, limit).map((production, i) => (
 
         <ProductionItem
