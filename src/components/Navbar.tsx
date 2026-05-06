@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="z-100 fixed top-0 left-0 w-full px-5 md:px-10 lg:px-40 py-5 bg-acier border-b border-ivoire/66">
+      <nav className="z-100 fixed top-0 left-0 w-full px-5 md:px-5 lg:px-20 py-5 bg-acier border-b border-ivoire/66">
         <div className="flex justify-between items-center">
 
           <div className="text-ivoire font-bold text-5xl font-bebas-neue">

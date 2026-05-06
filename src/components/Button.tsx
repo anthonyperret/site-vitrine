@@ -13,9 +13,9 @@ export default function Button({ type, label, path }: Props) {
 
   return(
 
-    <div ref={ref as React.RefObject<HTMLDivElement>} className={`${visible ? "animate-fade-up" : "opacity-0"} w-full lg:w-auto`}>
+    <div ref={ref as React.RefObject<HTMLDivElement>} className={`${visible ? "animate-fade-up" : "opacity-0"} w-full lg:w-auto md:w-auto`}>
       <Link href={path} >
-        <button className={`w-full lg:w-auto px-6 py-2 rounded-sm font-dm-sans ${type === "primary" ? "bg-cuivre text-ivoire" : "border border-ivoire/66 text-ivoire/66"}`}>
+        <button className={`w-full lg:w-auto md:w-auto px-6 py-2 rounded-sm font-dm-sans ${type === "primary" ? "bg-cuivre text-ivoire" : "border border-ivoire/66 text-ivoire/66"}`}>
           {label}
         </button>
       </Link>

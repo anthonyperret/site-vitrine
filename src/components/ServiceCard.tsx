@@ -71,7 +71,7 @@ export default function ServiceCard({ service }: Props) {
         <div className="hidden lg:grid grid-cols-2 font-dm-sans text-sm text-ivoire">
 
           {service.items.map((item, j) => (
-            <div key={j} className={`pb-3 mb-2 flex gap-2 items-center ${j < service.items.length - 2 ? "border-b border-ivoire/33" : ""}`}>
+            <div key={j} className={`py-3 flex gap-2 items-center ${j < service.items.length - 2 ? "border-b border-ivoire/33" : ""}`}>
               <span className="flex w-4 h-4 rounded-full bg-acier border border-ivoire/33 items-center justify-center">
                 <span className="block w-1.5 h-1.5 rounded-full bg-cuivre"></span>
               </span>
@@ -85,7 +85,7 @@ export default function ServiceCard({ service }: Props) {
         <div className="grid lg:hidden font-dm-sans text-sm text-ivoire">
 
           {service.items.map((item, j) => (
-            <div key={j} className={`flex gap-2 items-center ${j < service.items.length - 1 ? "border-b border-ivoire/33 pb-3 mb-2" : ""}`}>
+            <div key={j} className={`flex gap-2 items-center py-3 ${j < service.items.length - 1 ? "border-b border-ivoire/33" : ""}`}>
               <span className="flex w-4 h-4 rounded-full bg-acier border border-ivoire/33 items-center justify-center">
                 <span className="block w-1.5 h-1.5 rounded-full bg-cuivre"></span>
               </span>

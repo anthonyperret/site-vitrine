@@ -21,6 +21,10 @@
   --font-dm-sans: var(--font-dm-sans), sans-serif;
   --animate-fade-up: fade-up 0.7s ease both;
 
+  --breakpoint-md: 786px;
+  --breakpoint-lg: 1074px;
+  --breakpoint-xl: 1920px;
+
 }
 
 @keyframes fade-up {
