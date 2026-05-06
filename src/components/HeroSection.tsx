@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="h-screen bg-fonderie relative overflow-hidden flex flex-col justify-center">
 
       <span
-        className="hidden lg:inline md:inline absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 select-none font-bebas-neue text-[40vw] leading-none"
+        className="hidden lg:inline md:inline absolute lg:top-40 md:top-60 left-1/2 -translate-x-1/2 select-none font-bebas-neue text-[40vw] leading-none"
         style={{ color: "transparent", WebkitTextStroke: "1px var(--ivoire)", opacity: 0.07 }}
         aria-hidden="true"
       >
@@ -23,12 +23,12 @@ export default function HeroSection() {
             Agence web — sud-ouest
           </p>
 
-          <h1 className="animate-fade-up text-ivoire lg:w-4xl" style={{   animationDelay: "0.2s" }}>
+          <h1 className="animate-fade-up text-ivoire lg:w-4xl md:w-2xl" style={{   animationDelay: "0.2s" }}>
             Forgez votre présence
             <span className="accent"> en ligne.</span>
           </h1>
 
-          <p className="animate-fade-up lg:w-4xl text-ivoire/66 text-md" style={{ animationDelay: "0.3s" }}>
+          <p className="animate-fade-up lg:w-4xl md:w-2xl text-ivoire/66 text-md" style={{ animationDelay: "0.3s" }}>
             Sites vitrine, e-commerce, applications — conçus sur mesure pour les artisans, commerçants et indépendants qui veulent enfin exister là où leurs clients les cherchent.
           </p>
           

@@ -21,7 +21,7 @@
   --font-dm-sans: var(--font-dm-sans), sans-serif;
   --animate-fade-up: fade-up 0.7s ease both;
 
-  --breakpoint-md: 786px;
+  --breakpoint-md: 764px;
   --breakpoint-lg: 1074px;
   --breakpoint-xl: 1920px;
 
@@ -57,11 +57,11 @@ h3 > .accent {
 }
 
 div > section:first-child {
-  @apply mt-22.25;
+  @apply lg:pt-42.25 pt-32.25;
 }
 
 h1 {
-  @apply text-6xl lg:text-9xl;
+  @apply text-6xl md:text-8xl lg:text-9xl;
   @apply font-bebas-neue font-bold uppercase;
 }
 

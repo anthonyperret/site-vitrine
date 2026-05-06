@@ -52,10 +52,10 @@ export default function ContactForm() {
           <label htmlFor="projectType" className="text-ivoire/33 tagline font-dm-sans text-xs">Type de projet</label>
           <select required name="projectType" id="projectType" className="w-full mt-1 bg-acier text-ivoire px-3 py-2 rounded-xs outline-none font-dm-sans text-xs border border-ivoire/33 focus:border-cuivre">
             <option value="">Sélectionnez...</option>
-            <option value="Site vitrine">Site vitrine</option>
             <option value="Site one-page">Site one-page</option>
+            <option value="Site vitrine">Site vitrine</option>
             <option value="Site e-commerce">Site e-commerce</option>
-            <option value="Application web / mobile">Application web / mobile</option>
+            <option value="Application web / mobile">Solution métier</option>
             <option value="Autre / Je ne sais pas encore">Autre / Je ne sais pas encore</option>
           </select>
         </div>
