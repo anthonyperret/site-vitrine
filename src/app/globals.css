@@ -50,6 +50,16 @@ button {
   @apply uppercase tracking-widest font-dm-sans;
 }
 
+h1 > .accent,
+h2 > .accent,
+h3 > .accent {
+  @apply text-cuivre;
+}
+
+div > section:first-child {
+  @apply mt-22.25;
+}
+
 h1 {
   @apply text-6xl lg:text-9xl;
   @apply font-bebas-neue font-bold uppercase;

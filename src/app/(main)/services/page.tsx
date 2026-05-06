@@ -16,7 +16,7 @@ export default function PageServices() {
   return (
     <div>
       <SmoothHashScroll />
-      <div className="lg:hidden pt-20 bg-fonderie"></div>
+
       <Section bg="fonderie" eyebrow="mes services" title="Choissisez votre" highlight="formule.">
 
         <div className="flex flex-col gap-5 lg:mt-30 mt-10">

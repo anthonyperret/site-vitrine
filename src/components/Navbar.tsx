@@ -7,7 +7,6 @@ const LINKS = [
   { href: "/services", label: "Services" },
   { href: "/realisations", label: "Réalisations" },
   { href: "/a-propos", label: "À Propos" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -51,8 +50,8 @@ export default function Navbar() {
 
           {/* Desktop (lg+) — bouton devis à droite */}
           <Link href="/contact" className="hidden lg:block">
-            <button className="bg-cuivre text-ivoire px-6 py-3 rounded-sm font-dm-sans">
-              Devis gratuit
+            <button className="bg-cuivre text-ivoire px-6 py-2 rounded-sm font-dm-sans">
+              Parlons de votre projet
             </button>
           </Link>
 
@@ -66,8 +65,8 @@ export default function Navbar() {
               ))}
             </ul>
             <Link href="/contact">
-              <button className="bg-cuivre text-ivoire px-5 py-2.5 rounded-sm font-dm-sans">
-                Devis gratuit
+              <button className="bg-cuivre text-ivoire px-6 py-2 rounded-sm font-dm-sans">
+                Parlons de votre projet
               </button>
             </Link>
           </div>
@@ -117,8 +116,8 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/contact" onClick={() => setOpen(false)} className="mt-4">
-            <button className="bg-cuivre text-ivoire px-8 py-4 rounded-sm font-dm-sans text-base">
-              Devis gratuit
+            <button className="bg-cuivre text-ivoire px-6 py-2 rounded-sm font-dm-sans text-base">
+              Parlons de votre projet
             </button>
           </Link>
         </div>

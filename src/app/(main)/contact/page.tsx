@@ -22,9 +22,9 @@ export default function PageContact() {
             Devis gratuit et sans engagement. Je reviens vers vous dans les meilleurs délais avec une réponse adaptée à votre projet.
           </Paragraph>
 
-          <Paragraph i={0}>
+          <Paragraph i={1}>
             <span className="text-cuivre mr-2">•</span>contact@farga.fr<br/>
-            <span className="text-cuivre mr-2">•</span>07 50 27 97 42<br/>
+            {/* <span className="text-cuivre mr-2">•</span>07 50 27 97 42<br/> */}
             <span className="text-cuivre mr-2">•</span>Tarbes - Hautes-Pyrénées<br/>
           </Paragraph>
 
